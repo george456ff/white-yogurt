@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WY Entertainment</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="backToTopStyle.css">
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <header>
+        <a href="index.html" id="logo"><h1>WHITE YOGURT</h1></a>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="#aboutDiv">ABOUT</a>
+                        <a href="#contactDiv">CONTACT</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="https://white-yogurt.itch.io/"><button id="button">MORE GAMES HERE</button></a></li>
+        </ul>
+    </header>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size: 28px">&#9650;</button>
+        <div class="headingDiv">
+            <h1 id="heading">LET'S PLAY!</h1>
+        </div>
+        <div class="aboutDiv" id="aboutDiv">
+            <img src="aboutImage.png" id="aboutImage">
+            <div class="rightDiv">
+                <h1 id="aboutHeading">ABOUT</h1>
+                <p id="aboutParagraph">
+                    White Yogurt is an online brand name for video games.<br>
+                    White Yogurt Entertainment makes video games for passion.
+                </p>
+            </div>
+        </div>
+        <div class="contactDiv" id="contactDiv">
+            <div class="leftDiv">
+                <h1 id="contactHeading">CONTACT</h1>
+                <p id="contactParagraph">
+                    White Yogurt is an online brand name for video games.<br>
+                    White Yogurt Entertainment makes video games for passion.
+                </p>
+            </div>
+            <img src="contactImage.png" id="contactImage">
+        </div>
+        <div class="games">
+            <h1>FNAF FAN GAME</h1>
+            <h3>Status: Completed</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmXtkHOhC7w?si=vJ4kEp7QoJYyHOoh"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="games">
+            <h1>2D PIXEL GAME</h1>
+            <h3>Status: Canceled</h3>
+            <img src="gameImage.png" id="pixelGame" width="560", height="315">
+        </div>
+        <script src="backToTop.js"></script>
+        <script src="backgroundOverlay.js"></script>
+        <script src="scrollAnimation.js"></script>
+    </body>
+    <footer>
+        <div class="links">
+            <a href="https://white-yogurt.itch.io/" target="_blank"><img src="logo.png" id="imageLink"></a>
+            <a href="https://itch.io/profile/white-yogurt" target="_blank">Community profile</a>
+        </div>
+        <div class="copyright">
+            <p>
+                &copy; White Yogurt - Made in Feb. 2025<br>
+                All rights reserved. 
+            </p>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,302 @@
+/* General Styles (Applied to all screen sizes) */
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #555555;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+::selection {
+    color: white;
+    background-color: #555555;
+}
+
+html, header, body, footer {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    overflow-x: hidden;
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    padding: 25px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#logo {
+    width: 64px;
+    margin: auto;
+    transition: all 0.3s ease;
+    box-shadow: -4px -4px #00aaff, 4px 4px #0055ff;
+    transform: translateY(-5px);
+}
+
+#logo:hover {
+    cursor: pointer;
+    box-shadow: 0 0 #00aaff;
+    transform: translateY(0px);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 25px auto auto auto;
+    gap: 30px;
+}
+
+li {
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+#listChoice {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#listChoice:hover {
+    cursor: pointer;
+    text-shadow: 0 2px #00aaff, 0 4px #0055ff, 0 6px blue;
+}
+
+#listChoice:active {
+    color: #555555;
+    text-shadow: 0 0;
+}
+
+/* Body Styles */
+.heading {
+    padding: 200px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    line-height: 0.5;
+    background-image: url("images/kuikboost\ background.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    font-size: 128px;
+    text-shadow: 5px 5px #00aaff, 10px 10px #0055ff;
+}
+
+#comingSoon {
+    font-size: 32px;
+}
+
+.mainDiv {
+    color: white;
+    background-color: black;
+    padding: 100px 0;
+    display: flex;
+}
+
+.content, .sideDiv {
+    margin: auto;
+    padding: 0 15px;
+    height: 250px;
+}
+
+.content {
+    width: 50%;
+}
+
+#moreInfo {
+    color: white;
+}
+
+#moreInfo:hover {
+    color: red;
+}
+
+#moreInfo:active {
+    color: #555555;
+}
+
+.sideDiv {
+    width: 25%;
+    background-image: url("images/kuikboost\ background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.3s ease;
+}
+
+.sideDiv:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: -5px -5px 8px #555555, 5px 5px 8px #555555;
+    text-shadow: 4px 4px #888888, 7px 7px #555555;
+}
+
+.howToPlay {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 200px 0;
+    color: white;
+}
+
+#howToPlayVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.howToPlay h1, .howToPlay p {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0 10px 0;
+    }
+
+    #logo {
+        width: 48px;
+    }
+
+    ul {
+        gap: 15px;
+    }
+
+    #listChoice {
+        font-size: medium;
+    }
+
+    .heading {
+        padding: 150px 0 50px 0;
+    }
+
+    #title {
+        font-size: 64px;
+        text-shadow: 3px 3px #00aaff, 6px 6px #0055ff;
+    }
+
+    #comingSoon {
+        font-size: 24px;
+    }
+
+    .mainDiv {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+
+    .content, .sideDiv {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .sideDiv {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .howToPlay {
+        padding: 100px 0;
+    }
+
+    .howToPlay h1 {
+        font-size: 32px;
+    }
+
+    .howToPlay p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0 5px 0;
+    }
+
+    #logo {
+        width: 40px;
+    }
+
+    ul {
+        gap: 10px;
+    }
+
+    #listChoice {
+        font-size: small;
+    }
+
+    .heading {
+        padding: 100px 0 30px 0;
+    }
+
+    #title {
+        font-size: 48px;
+        text-shadow: 2px 2px #00aaff, 4px 4px #0055ff;
+    }
+
+    #comingSoon {
+        font-size: 18px;
+    }
+
+    .mainDiv {
+        padding: 30px 0;
+    }
+
+    .content, .sideDiv {
+        width: 95%;
+    }
+
+    .howToPlay {
+        padding: 50px 0;
+    }
+
+    .howToPlay h1 {
+        font-size: 24px;
+    }
+
+    .howToPlay p {
+        font-size: 14px;
+    }
+}

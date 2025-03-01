@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>KuikBoost</title>
+        <link rel="stylesheet" href="KB_style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <header>
+        <img id="logo" src="images/logo.png" onclick="refreshPage()">
+        <ul>
+            <li><a href="https://white-yogurt.com/" id="listChoice">HOME</a></li>
+            <li><a href="#howToPlay" id="listChoice">HOW TO PLAY</a></li>
+            <li><a href="https://white-yogurt.itch.io/kuikboost" target="_blank" id="listChoice">DOWNLOAD</a></li>
+        </ul>
+    </header>
+    <body>
+        <div class="heading">
+            <h1 id="title">KUIKBOOST</h1>
+            <h3 id="comingSoon">Coming Soon</h3>
+        </div>
+        <div class="mainDiv">
+            <div class="content">
+                <h1>ABOUT THE GAME</h1>
+                <p>
+                    KB, short for KuikBoost ("Quick" Boost), is a 3D racing game that also includes police chases.<br>
+                    For now, this is only a prototype for testing the game idea.<br>
+                    In the prototype, you only get to drive 1 car and have 1 objective (escape from the cops).<br>
+                    There is also a car showroom.
+                </p>
+                <a href="https://white-yogurt.itch.io/kuikboost" target="_blank" id="moreInfo">More Info</a>
+            </div>
+            <div class="sideDiv" onclick="gotoYoutube()">
+                <h2>Trailer:</h2>
+            </div>
+        </div>
+        <div class="howToPlay" id="howToPlay">
+            <video autoplay muted loop id="howToPlayVideo">
+                <source src="KuikBoost prototype gameplay - GrBiEdits (720p, h264).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h1>HOW TO PLAY</h1>
+            <p>There is a timer displaying how long it took you to escape. There is a small bar on the bottom<br>
+                displaying how close you are to being arrested (the timer is affected by the distance of cops<br>
+                around you and how fast you are going). If the bar is completely green for 30 seconds, you win the level.<br>
+                If the bar is completely red for 5 seconds, you are busted.
+            </p>
+        </div>
+        <script>
+            function refreshPage() {
+                window.location.href = "kuikboost.html";
+            }
+            function gotoYoutube() {
+                window.open("https://www.youtube.com/watch?v=LO-A57ZsLqw");
+                target = "_blank";
+            }
+        </script>
+    </body>
+    <footer>
+        <p>&copy; White Yogurt - Made in Feb. 2025<br>
+            All rights reserved.
+        </p>
+    </footer>
+</html>

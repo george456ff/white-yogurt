@@ -47,6 +47,7 @@ header {
     transition: all 0.3s ease;
     box-shadow: -4px -4px #00aaff, 4px 4px #0055ff;
     transform: translateY(-5px);
+    rotate: 90;
 }
 
 #logo:hover {

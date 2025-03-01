@@ -44,7 +44,7 @@ header {
 ul {
     display: flex;
     list-style-type: none;
-    margin: 25px auto auto auto;
+    margin: auto;
     gap: 30px;
 }
 

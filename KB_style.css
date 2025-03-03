@@ -35,7 +35,9 @@ header {
     padding: 25px 0 15px 0;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #00000055;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     z-index: 1000;
